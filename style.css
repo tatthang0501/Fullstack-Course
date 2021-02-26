@@ -1,0 +1,28 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+}
+header{
+	height: 100px;
+	background-color: #FFBA00;
+}
+
+#top,#bottom{
+	margin: 0px auto;
+}
+
+#top{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#top ul li{
+	display: inline;
+}
+
+#bottom{
+	display: flex;
+}
