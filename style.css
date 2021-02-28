@@ -104,12 +104,60 @@ header{
 	border-radius: 6px;
 }
 
-#main > ul{
+#main div:nth-child(2){
+	height: 50px;
+}
+
+#main > div > ul{
 	display: flex;
+	height: 50px;
 	justify-content: space-around;
 }
 
-#main > ul li{
+#main > div> ul li{
 	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+}
 
+#main{
+	margin-bottom: 10px;
+}
+
+/*---------------------------menu-------------------------*/
+
+.menu > h3{
+	display: inline-block;
+	margin-left: 1%;
+}
+
+.list-menu-item{
+	max-width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px auto 0px;
+}
+
+.menu-item{
+	max-width: calc(100% / 7);
+	flex-basis: calc(100% / 7);
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.hot-menu-item{
+	display:flex;
+	flex-direction: column;
+}
+
+.hot-menu-item img{
+	width: 84px;
+	height: 84px;
+	margin: 0px auto;
+	border: 1px solid #FFBA00;
+	border-radius: 30%;
+}
+
+.hot-menu-item span{
+	margin: 0px auto;
 }
