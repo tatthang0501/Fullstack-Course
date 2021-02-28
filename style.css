@@ -2,19 +2,23 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	/* border: 1px solid black; */
 	text-decoration: none;
 }
 header{
+	width: 100%;
 	height: 100px;
 	background-color: #FFBA00;
+}
 
+.container{
+	height: 100px;
+	width: 50%;
+	margin: 0px auto;
 }
 
 .container > div{
 	height: 100px;
-	max-width: 50%;
-	margin: 0px auto;
+	max-width: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -30,12 +34,6 @@ header{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top:10px;
-}
-
-#bottom{
-	display: flex;
-	justify-content: space-between;
-	
 }
 
 #top h1{
@@ -65,4 +63,53 @@ header{
 
 #bottom{
 	display: flex;
+}
+
+#search input{
+	display: inline-block;
+}
+
+#search{
+	flex-basis: 70%;
+}
+
+#search input{
+	width: 90%;
+}
+
+
+#bottom p, #bottom h2{
+	flex-basis: 15%;
+}
+
+/*-----------------------main------------------*/
+
+#main{
+	width: 100%;
+}
+
+#main > div:first-child{
+	height: 250px;
+	position: relative;
+}
+
+#main:first-child img{
+	display: inline-block;
+	width: 98%;
+	height: 95%;
+	background-color: #FFBA00;
+	position: absolute;
+	margin-top: 6.25px;
+	margin-left: 1%;
+	border-radius: 6px;
+}
+
+#main > ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+#main > ul li{
+	display: inline-block;
+
 }
