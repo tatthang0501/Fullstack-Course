@@ -8,10 +8,10 @@ header{
 	width: 100%;
 	height: 100px;
 	background-color: #FFBA00;
+	position: fixed;
 }
 
 .container{
-	height: 100px;
 	width: 50%;
 	margin: 0px auto;
 }
@@ -25,7 +25,7 @@ header{
 
 #top, #bottom{
 	margin: 0px auto;
-	width: 100%;
+	width: 98%;
 	height: 50%;
 }
 
@@ -33,7 +33,8 @@ header{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top:10px;
+	margin-top: 5px;
+	flex-basis: 20%;
 }
 
 #top h1{
@@ -56,33 +57,62 @@ header{
 }
 
 #top ul li a{
+	font-size: 18px;
+	color: black;
 	display: inline-block;
-	height: 40px;
-	line-height: 40px;
+	height: 30px;
+	line-height: 30px;
 }
 
 #bottom{
 	display: flex;
+	justify-content: space-between;
+	margin: 0px auto;
+}
+
+#search{
+	flex-basis: 65%;
+	margin: auto 0px;
 }
 
 #search input{
 	display: inline-block;
+	line-height: 48px;
+	height: 35px;
+	width: 93%;
+	padding-left: 10px;
 }
 
-#search{
-	flex-basis: 70%;
+#bottom > a{
+	display: inline-block;
+	flex-basis: 20%;
 }
 
-#search input{
-	width: 90%;
+#bottom > a span{
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
 }
 
-
-#bottom p, #bottom h2{
-	flex-basis: 15%;
+#avatar{
+	margin: auto 0px;
+	vertical-align: middle;
 }
 
+#bottom a, #bottom h2{
+	line-height: 48px;
+}
+#above-of-section{
+	width: 100%;
+	height: 100px;
+}
 /*-----------------------main------------------*/
+/* .down::before{
+	content:" ";
+	background-color: white;
+	height: 100px;
+	width:100%;
+} */
 
 #main{
 	width: 100%;
