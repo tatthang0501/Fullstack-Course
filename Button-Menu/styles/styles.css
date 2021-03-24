@@ -5,6 +5,14 @@
     border: none;
 }
 
+*:focus{
+    outline: none;
+}
+
+input{
+    font-size: 11px;
+}
+
 li{
     list-style: none;
 }
@@ -13,9 +21,9 @@ a{
     text-decoration: none;
 }
 
-.container{
+.menu-container{
     width: 70%;
-    height: 200px;
+    height: 100px;
     margin: 0px auto;
 }
 #menu{
@@ -44,6 +52,12 @@ a{
 }
 
 /*-----------------------subscribe-----------------------*/
+
+.container{
+    width: 70%;
+    height: 200px;
+    margin: 0px auto;
+}
 
 #subscribe{
     margin: 0px auto;
@@ -85,6 +99,9 @@ a{
     font-size: 17px;
 }
 
+#subscribe form input[type=submit]:hover{
+    cursor: pointer;
+}
 /*----------------------------btn--------------------*/
 
 .button{
@@ -146,33 +163,63 @@ a{
     position: relative;
 }
 
-/*.login form input, .login p{
-    position: absolute;
-}*/
 .login form input{
     width: calc(100%/3);
     height: 30px;
 }
 
+.login form > div{
+    width: 30px;
+    height: 30px;
+    background-color: #363d47;
+    border-radius: 3px 0px 0px 3px;
+    position: absolute;
+}
+
+.login form img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.icon-container1{
+    margin-top: 100px;
+    margin-left: calc(100%/3);
+}
+
+.icon-container2{
+    margin-top: 135px;
+    margin-left: calc(100%/3);
+}
+
 .login form input[type=text], .login form input[type=password]{
+    width: calc(100%/3 - 30px);
     background-color: #3a4149;
     padding-left: 10px;
+    border-radius: 0px 3px 3px 0px;
 }
 .login form input[type=submit]{
     font-weight: bold;
     color: white;
     background-color: #ea4c87;
+    font-size: 13px;
+    border-radius: 3px;
 }
+
+.login form input[type=submit]:hover{
+    cursor: pointer;
+}
+
 .login form input[type=text]{
     position: absolute;
     margin-top: 100px;
-    margin-left: calc(100%/3);
+    margin-left: calc(100%/3 + 30px);
 }
 
 .login form input[type=password]{
     position: absolute;
     margin-top: 135px;
-    margin-left: calc(100%/3);
+    margin-left: calc(100%/3 + 30px);
 }
 
 .login form input[type=submit]{
