@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
 }
 
 li{
@@ -12,10 +13,14 @@ a{
     text-decoration: none;
 }
 
+.container{
+    width: 70%;
+    height: 200px;
+    margin: 0px auto;
+}
 #menu{
-    float: left;
-    width: fit-content;
-    margin: 50px;
+    width: 100%;
+    margin-left: 200px;
 }
 
 #menu li{
@@ -34,6 +39,159 @@ a{
 }
 
 #menu li:hover{
-    background-color: rgba(0,0,0, 0.2);
+    background-color: rgba(254,0,0,0.7);
     cursor: pointer;
+}
+
+/*-----------------------subscribe-----------------------*/
+
+#subscribe{
+    margin: 0px auto;
+    background-color: RGB(254, 177, 63);
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#subscribe p{
+    padding-top: 15px;  
+    font-size: 30px;
+    color: white;
+}
+
+#subscribe form{
+    margin-top: 15px;
+}
+
+#subscribe p, #subscribe form{
+    margin-left: 20px;
+}
+
+#subscribe form input[type=text]{
+    display: inline-block;
+    width: 90%;
+    height: 50px;
+    padding-left: 20px;
+    border: none;
+}
+
+#subscribe form input[type=submit]{
+    margin-top: 15px;
+    width: 120px;
+    height: 50px;
+    background-color: #ff434e;
+    border: none;
+    color: white;
+    font-size: 17px;
+}
+
+/*----------------------------btn--------------------*/
+
+.button{
+    width: 12%;
+    height: 350px;
+    margin: 50px auto;
+}
+
+.btn1, .btn2{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: : red;
+    border: none;
+}
+
+.btn1, .btn2{
+    color: white;   
+}
+
+.btn2{
+    border-radius: 50px;
+}
+
+.btnc1{
+    background-color: #72639e;
+}
+
+.btnc2{
+    background-color: #4e4584;
+}
+
+.btnc3{
+    background-color: #01b4a5;
+}
+
+.btnc4{
+    background-color: #b53264;
+}
+
+.btnc5{
+    background-color: #e2e9e2;
+}
+
+
+/*----------------------------login---------------------*/
+
+.login{
+    width: 30%;
+    height: 350px;
+    margin: 20px auto;
+    background-color: #303038;
+}
+
+.login form{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*.login form input, .login p{
+    position: absolute;
+}*/
+.login form input{
+    width: calc(100%/3);
+    height: 30px;
+}
+
+.login form input[type=text], .login form input[type=password]{
+    background-color: #3a4149;
+    padding-left: 10px;
+}
+.login form input[type=submit]{
+    font-weight: bold;
+    color: white;
+    background-color: #ea4c87;
+}
+.login form input[type=text]{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: calc(100%/3);
+}
+
+.login form input[type=password]{
+    position: absolute;
+    margin-top: 135px;
+    margin-left: calc(100%/3);
+}
+
+.login form input[type=submit]{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: calc(100%/3);
+}
+
+.login form p{
+    display: inline-block;
+    color: #595961;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: calc(100%/3);
+    width: calc(100%/3);
+    text-align: center;
+    font-size: 12px;
+}
+
+.login form p span a{
+    color: white;
 }
