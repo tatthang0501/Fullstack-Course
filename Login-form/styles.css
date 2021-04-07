@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background: #50555e url("images/login-background.png") repeat-x left top;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    margin: 0px auto;
+    margin-top: 94px;
+    max-width: 475px;
+    max-height: 475px;
+    width: 90%;
+    height: 90%;
+    background-color: #f1f2f4;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px rgb(23 16 25 / 75%), inset 0px -2px 0px rgb(23 16 25 / 20%);
+}
+
+#clip {
+    margin: 0px auto;
+    width: 110px;
+    margin-top: -75px;
+}
+
+#clip img {
+    display: block;
+    margin: 0px auto;
+}
+
+#hole {
+    width: 100%;
+    background: #50555e url("images/login-background.png") repeat-x left top;
+    height: 5px;
+    box-shadow: 0px -2px 0px rgba(23, 16, 25, 0.2);
+    border-radius: 3px;
+    margin-top: -4px;
+}
+
+h2,
+p {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 48px;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 36px;
+}
+
+p {
+    margin-top: 4px;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+    margin-bottom: 44px;
+}
+
+#input-container {
+    border-radius: 3px;
+    width: calc(100% - 92px);
+    margin: 0px auto;
+    border: 1px solid #adaeb0;
+    box-shadow: inset 0px 1px 3px rgb(23, 16, 25, 0.45), 0px 2px 0px rgb(255, 255, 255, 1);
+}
+
+input[type="text"] {
+    background: transparent url("images/email.png") no-repeat 23px center;
+    border-bottom: 1px solid #bec0c2;
+}
+
+input[type="password"] {
+    background: transparent url("images/password.png") no-repeat 23px center;
+    border-top: 1px solid #ffffff;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 84px;
+    background-color: #e5e7e9;
+    padding-left: 73px;
+    padding-right: 23px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #6f7278;
+}
+
+input[type="submit"] {
+    height: 74px;
+    display: block;
+    width: calc(100% - 92px);
+    margin: 0px auto;
+    margin-top: 27px;
+    font-size: 36px;
+    background: #52c5b6 url("images/base.png") repeat-x left center;
+    border-radius: 3px;
+    border-top: 1px solid #2a8b7b;
+    border-bottom: 1px solid #2a8b7b;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    color: white;
+}

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 300px;
+}
+ul li{
+    list-style: none;
+    background-color: beige;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    font-size: 20px;
+    position: relative;
+}
+a:hover{
+    background-color: bisque;
+}
+a::after{
+    content: '';
+    position: absolute;
+    right: 10px;
+    top:10px;
+    border: 5px solid black;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-bottom-width: 0px;
+    height: 0px;
+    width: 0px;
+}
+
+@font-face{
+    font-family: Okhela;
+    src: url();
+    font-weight: normal;
+}
