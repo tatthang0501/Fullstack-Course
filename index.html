@@ -311,25 +311,35 @@
             <h2>stay in touch</h2>
         </div>
         <div id="maps"></div>
-        <div id="contact-info">
-            <div>
-                <h4>contact information</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida.
-                </p>
-                <p>
-                    Cras fermentum elit quis magna congue, <span>vel sodales</span> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus
-                </p>
+        <div class="container">
+            <div id="contact-info">
+                <div>
+                    <h4>contact information</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida.
+                    </p>
+                    <p>
+                        Cras fermentum elit quis magna congue, <span>vel sodales</span> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus
+                    </p>
+                </div>
+                <form action="">
+                    <div>
+                        <div id="your-name">
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" />
+                        </div>
+                        <div id="your-email">
+                            <label for="email">Your email</label>
+                            <input type="text" id="email" />
+                        </div>
+                    </div>
+                    <div id="your-message">
+                        <label for="message">Your message</label>
+                        <textarea id="message" rows="10"></textarea>
+                    </div>
+                    <button type="submit">send message</button>
+                </form>
             </div>
-            <form action="">
-                <label for="name">Your name</label>
-                <input type="text" id="name" />
-                <label for="email">Your email</label>
-                <input type="text" id="email" />
-                <label for="message">Your message</label>
-                <textarea id="message" rows="10"></textarea>
-                <button type="submit">send message</button>
-            </form>
         </div>
     </section>
     <footer>

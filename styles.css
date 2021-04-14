@@ -7,6 +7,12 @@
         border: none;
     }
     
+    header,
+    section,
+    footer {
+        width: 100%;
+    }
+    
     ul {
         list-style: none;
     }
@@ -578,6 +584,7 @@
     /* --features-- */
     
     #features {
+        font-size: 0px;
         margin-top: 165px;
         padding-top: 85px;
         background-color: #3a454d;
@@ -601,4 +608,202 @@
     
     #features .container>div>div img {
         max-width: 100%;
+    }
+    
+    #features .container>div>div>div {
+        margin-top: 54px;
+    }
+    
+    #features .container>div>div>div :first-child {
+        font-size: 18px;
+        line-height: 42px;
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+    
+    #features .container>div>div>div :last-child {
+        font-size: 16px;
+        line-height: 26px;
+        color: white;
+        margin-bottom: 115px;
+    }
+    /* --contact-- */
+    
+    #contact {
+        border: none;
+        font-size: 0px;
+        margin-bottom: 100px;
+    }
+    
+    #contact #maps {
+        height: 350px;
+        background: #d4d6d2 url(images/map-ex.png) no-repeat;
+    }
+    
+    #contact :nth-child(3) #contact-info {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #contact :nth-child(3) #contact-info div,
+    #contact :nth-child(3) #contact-info form {
+        width: calc((100% - 30px) / 2);
+    }
+    
+    #contact :nth-child(3) #contact-info div h4 {
+        font-size: 20px;
+        line-height: 26px;
+        color: #292f36;
+        text-transform: uppercase;
+        margin-bottom: 37px;
+    }
+    
+    #contact :nth-child(3) #contact-info div p {
+        font-size: 16px;
+        line-height: 26px;
+        color: #8d8f92;
+    }
+    
+    #contact :nth-child(3) #contact-info>div :nth-child(2) {
+        margin-bottom: 26px;
+    }
+    
+    #contact :nth-child(3) #contact-info div :nth-child(3) span {
+        font-weight: bolder;
+    }
+    
+    #contact :nth-child(3) #contact-info form {
+        height: 400px;
+        width: 555px;
+        background-color: white;
+    }
+    
+    #contact :nth-child(3) #contact-info form>div #your-name,
+    #contact :nth-child(3) #contact-info form>div #your-email {
+        display: inline-block;
+        width: calc((100% - 15px) / 2);
+        height: 100%;
+    }
+    
+    #contact input[type="text"] {
+        width: 100%;
+        height: 44px;
+        margin-top: 10px;
+    }
+    
+    #contact label {
+        font-size: 14px;
+        line-height: 12px;
+        text-transform: uppercase;
+        color: #8d8f92;
+    }
+    
+    #contact :nth-child(3) #contact-info form #your-message {
+        display: inline-block;
+        width: calc(100% - 60px);
+        margin: 0px 30px;
+        margin-top: 30px;
+        height: 180px;
+    }
+    
+    #contact textarea {
+        width: 100%;
+        height: 160px;
+    }
+    
+    #contact :nth-child(3) #contact-info form>div {
+        margin: 0px 30px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 495px;
+    }
+    
+    #contact input[type="text"],
+    #contact textarea {
+        border-radius: 5px;
+        font-size: 20px;
+        max-height: 100%;
+        margin-top: 8px;
+        background-color: #eaeef1;
+    }
+    
+    #contact button {
+        display: inline-block;
+        background-color: #23b7a4;
+        width: 151px;
+        height: 44px;
+        font-size: 14px;
+        line-height: 14px;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    
+    #contact-info form {
+        margin-top: -190px;
+    }
+    /* --footer-- */
+    
+    footer {
+        font-size: 0px;
+        background-color: #3a454d;
+    }
+    
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        min-height: 95px;
+    }
+    
+    footer .container p {
+        font-size: 14px;
+        color: white;
+        line-height: 95px;
+    }
+    
+    footer .container ul {
+        margin: auto 0px;
+    }
+    
+    footer .container ul li {
+        display: inline-block;
+        margin-right: 3px;
+    }
+    
+    footer .container ul :last-child {
+        margin-right: 0px;
+    }
+    
+    footer .container ul li a {
+        display: inline-block;
+        text-indent: -100000px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+    }
+    
+    footer .container ul :first-child a {
+        background: transparent url(images/twitter.png) no-repeat center center;
+    }
+    
+    footer .container ul :nth-child(2) a {
+        background: transparent url(images/fb.png) no-repeat center center;
+    }
+    
+    footer .container ul :nth-child(3) a {
+        background: transparent url(images/s.png) no-repeat center center;
+    }
+    
+    footer .container ul :nth-child(4) a {
+        background: transparent url(images/be.png) no-repeat center center;
+    }
+    
+    footer .container ul :nth-child(5) a {
+        background: transparent url(images/linkedin.png) no-repeat center center;
     }
