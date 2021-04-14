@@ -317,7 +317,7 @@
     }
     
     #meet-the-team .container>div div img {
-        max-width: 100%;
+        width: 100%;
     }
     
     #meet-the-team .container .partner-info :first-child {
@@ -352,7 +352,7 @@
         left: 0px;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.4);
-        height: 300px;
+        max-height: 300px;
         display: none;
         align-items: center;
         justify-content: space-around;
@@ -398,10 +398,6 @@
     
     #meet-the-team .container div div:hover .partner-links {
         display: flex;
-    }
-    
-    .partner-info {
-        margin-top: -4px;
     }
     
     #meet-the-team .container div div:hover .partner-info {
