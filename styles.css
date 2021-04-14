@@ -36,6 +36,7 @@
     }
     
     .container {
+        width: 100%;
         max-width: 1170px;
         padding: 0px 15px;
         margin: 0px auto;
@@ -352,10 +353,12 @@
         left: 0px;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.4);
-        max-height: 300px;
-        display: none;
+        height: 300px;
+        display: flex;
         align-items: center;
+        opacity: 0;
         justify-content: space-around;
+        transition: opacity 0.4s ease-in-out;
     }
     
     #meet-the-team .container .partner-links ul li,
@@ -397,9 +400,205 @@
     }
     
     #meet-the-team .container div div:hover .partner-links {
-        display: flex;
+        opacity: 1;
+    }
+    
+    .partner-info {
+        margin-top: -5px;
+        transition: background 0.4s ease-in-out;
     }
     
     #meet-the-team .container div div:hover .partner-info {
         background-color: #3a454d;
+    }
+    
+    #meet-the-team .container div div:hover .partner-info p {
+        color: white;
+    }
+    /* --works-- */
+    
+    #works {
+        padding-top: 80px;
+        margin-top: 100px;
+        background-color: #3a454d;
+    }
+    
+    #works h2 {
+        margin-top: 0px;
+        color: white;
+        border-left: 10px solid #4e5a62;
+    }
+    
+    #works .container {
+        /* min-height: 900px; */
+        position: relative;
+    }
+    
+    #works .container>div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    #works .container>div>div {
+        width: calc((100% - 60px) / 3);
+        max-height: 265px;
+    }
+    
+    #works .container div>div img {
+        max-width: 100%;
+    }
+    
+    #works .container>div>div {
+        position: relative;
+    }
+    
+    #works .container div>div p {
+        display: inline-block;
+        width: 360px;
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: uppercase;
+        line-height: 60px;
+        background-color: #292f36;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: absolute;
+        bottom: -30px;
+        left: 0px;
+        transition: bottom 0.7s ease-in-out;
+    }
+    
+    #works .container .mask {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(41, 47, 54, 0.5);
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    #works .container .mask a {
+        display: inline-block;
+        text-indent: -100000px;
+        width: 100%;
+        height: 100%;
+        background-image: url(images/plus.png);
+    }
+    
+    #works .container div>div:hover .mask {
+        opacity: 1;
+    }
+    
+    #works .container div>div:hover .mask p {
+        bottom: 0px;
+    }
+    
+    #works .container>div :nth-child(n+4) {
+        margin-top: 30px;
+    }
+    
+    #works .container #show-more {
+        display: inline-block;
+        font-size: 14px;
+        color: white;
+        line-height: 44px;
+        text-transform: uppercase;
+        border: 2px solid white;
+        height: 44px;
+        width: 150px;
+        text-align: center;
+        border-radius: 5px;
+        margin: 60px auto;
+    }
+    /* --what-we-do-- */
+    
+    #what-we-do .container h2 {
+        margin-bottom: 0px;
+    }
+    
+    #what-we-do .container>div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    #what-we-do .container>div>div {
+        width: calc((100% - 90px) / 4);
+    }
+    
+    #what-we-do .container>div div {
+        padding-top: 83px;
+        margin-top: 90px;
+    }
+    
+    #what-we-do .container>div div :first-child {
+        font-size: 17px;
+        line-height: 17px;
+        color: #292f36;
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    #what-we-do .container>div div :last-child {
+        font-size: 16px;
+        line-height: 26px;
+        color: #8d8f92;
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    #what-we-do .container>div> :nth-child(4n+1) {
+        background-image: url(images/gear.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    #what-we-do .container>div> :nth-child(4n+2) {
+        background-image: url(images/pencil.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    #what-we-do .container>div> :nth-child(4n+3) {
+        background-image: url(images/mobile.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
+    #what-we-do .container>div> :nth-child(4n) {
+        background-image: url(images/clock.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    /* --features-- */
+    
+    #features {
+        margin-top: 165px;
+        padding-top: 85px;
+        background-color: #3a454d;
+    }
+    
+    #features h2 {
+        margin-top: 0px;
+        color: white;
+        border-left: 10px solid #4e5a62;
+    }
+    
+    #features .container>div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    #features .container>div>div {
+        width: calc((100% - 60px) / 3);
+    }
+    
+    #features .container>div>div img {
+        max-width: 100%;
     }
